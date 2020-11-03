@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friday 13</title>
+</head>
+<body>
+<h1>Find Friday the 13</h1>
+<br/>
+<h3>Enter a year:</h3>
+    <form action="{% url 'fridayfound' %}">
+        <textarea cols="20" rows="1" name="year"></textarea>
+        <br/>
+        <input type="submit" value="Find!"/>
+    </form>
+<br/>
+<a href = "{% url 'about' %}">About</a>
+<a href="{% url 'contacts' %}">Contacts</a>
+<a href="{% url 'home' %}">Home</a>
+</body>
+</html>
