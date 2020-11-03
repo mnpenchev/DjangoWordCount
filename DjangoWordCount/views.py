@@ -40,6 +40,8 @@ def count(request):
 
 def fridayfound(request):
     year = int(request.GET['year'])
+    if year <= 0:
+        return render(request, 'friday.html')
     countf = 0
     for months in range(1, 13):
         if date(year, months, 13).weekday() == 4:
