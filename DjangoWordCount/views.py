@@ -24,6 +24,10 @@ def friday(request):
     return render(request, 'friday.html')
 
 
+def poisonedwine(request):
+    return render(request, 'poisonedwine.html')
+
+
 def count(request):
     fulltext = request.GET['fulltext']
     wordlist = fulltext.split()
@@ -48,3 +52,12 @@ def fridayfound(request):
             countf += 1
 
     return render(request, 'fridayfound.html', {'year': year, 'countf': countf})
+
+
+def poison(request):
+    r = list(request.GET['r'])
+    for i in range(0, len(r)):
+        r[i] = int(r[i])
+    number = sum(2**i for i in r)
+
+    return render(request, 'poisonedwinefound.html', {'number': number})
