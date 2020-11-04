@@ -13,5 +13,5 @@ To run the server type this in the command prompt:
 
     python manage.py runserver
     
-And access it at http://127.0.0.1
+And access it at http://127.0.0.1:8000
 
