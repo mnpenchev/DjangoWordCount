@@ -1,33 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-<h1>HOME</h1>
-<br/>
-<h1>Play Wordcount:</h1>
-<a href = "{% url 'wordcount' %}">Wordcount</a>
-<br/>
-<br/>
-<br/>
-<h1>Find friday 13 in a given year:</h1>
-<a href = "{% url 'friday' %}">friday 13</a>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>Find the poisoned wine bottle:</h1>
-<a href = "{% url 'poisonedwine' %}">Poisoned wine bottle</a>
-<br/>
-<br/>
-<br/>
-<br/>
-<a href = "{% url 'about' %}">About</a>
-<a href="{% url 'contacts' %}">Contacts</a>
-<a href="http://google.com">Google</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python - Mini projects</title>
+    <meta
+      name="description"
+      content="These are some small projects on react
+            developed by Martin Penchev."
+    />
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="row m-0 p-0">
+      <!--Dropdown navigation-->
+      <div class="col-12 m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">PythonFun</a>
+          <button
+            class="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+            aria-controls="my-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'about' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'contacts' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="m-4 row">
+        <a
+          href="{% url 'wordcount' %}"
+          class="text-dark"
+          style="text-decoration: none"
+        >
+          <div style="max-width: 300px" class="mr-4 card">
+            <img
+              style="
+                width: 300px;
+                height: 250px;
+                background-image: url('./imgs/Spinner.gif');
+                background-size: 100px;
+                background-repeat: no-repeat;
+                background-position: center center;
+              "
+              class="card-img-top"
+              src="https://source.unsplash.com/300x250/?word"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wordcount</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quisquam aspernatur perferendis, quos rerum facilis optio nam!
+              </p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="{% url 'friday' %}"
+          class="text-dark"
+          style="text-decoration: none"
+        >
+          <div style="max-width: 300px" class="mr-4 card">
+            <img
+              style="
+                width: 300px;
+                height: 250px;
+                background-image: url('./imgs/Spinner.gif');
+                background-size: 100px;
+                background-repeat: no-repeat;
+                background-position: center center;
+              "
+              class="card-img-top"
+              src="https://source.unsplash.com/300x250/?friday,13"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Find friday 13</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quisquam aspernatur perferendis, quos rerum facilis optio nam!
+              </p>
+            </div>
+          </div>
+        </a>
+        <a
+          href="{% url 'poisonedwine' %}"
+          class="text-dark"
+          style="text-decoration: none"
+        >
+          <div style="max-width: 300px" class="mr-4 card">
+            <img
+              style="
+                width: 300px;
+                height: 250px;
+                background-image: url('./imgs/Spinner.gif');
+                background-size: 100px;
+                background-repeat: no-repeat;
+                background-position: center center;
+              "
+              class="card-img-top"
+              src="https://source.unsplash.com/300x250/?wine"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Find poison wine</h5>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quisquam aspernatur perferendis, quos rerum facilis optio nam!
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
-
-
