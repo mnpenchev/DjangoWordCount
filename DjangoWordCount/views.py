@@ -47,11 +47,16 @@ def fridayfound(request):
     if year <= 0:
         return render(request, 'friday.html')
     countf = 0
+    word = ""
     for months in range(1, 13):
         if date(year, months, 13).weekday() == 4:
             countf += 1
+    if countf == 1:
+        word = "is " + str(countf)
+    else:
+        word = "are " + str(countf)
 
-    return render(request, 'fridayfound.html', {'year': year, 'countf': countf})
+    return render(request, 'fridayfound.html', {'year': year, 'word': word})
 
 
 def poison(request):
