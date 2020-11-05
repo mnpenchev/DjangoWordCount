@@ -1,7 +1,7 @@
-This is a basic website build with Django framework, The site contains several funny puzzles like
-word counter, the King and the 1000 Bottles of Wine Riddle, Find Friday 13 count in a given year.
+This is a basic website build with Django framework, The site contains several funny apps like
+word counter, the King and the 1000 Bottles of Wine Riddle and Find Friday 13 count in a given year.
 
-To run this you wil need Django v3.1 or greater
+To run this you will need Django v3.1 or greater
 
 To install it, make sure you have Python 3.6 or greater installed. Then run
 this command from the command prompt:
