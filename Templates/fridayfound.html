@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Friday in year</title>
-</head>
-<body>
-    <a href = "{% url 'friday' %}">New search</a>
-<h1>There are {{countf}} Friday 13 in {{year}} year</h1>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-<a href="{% url 'home' %}">Home</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python - Mini projects</title>
+    <meta
+      name="description"
+      content="These are some small projects on react
+            developed by Martin Penchev."
+    />
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="row m-0 p-0">
+      <!--Dropdown navigation-->
+      <div class="col-12 m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">PythonFun</a>
+          <button
+            class="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+            aria-controls="my-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'about' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'contacts' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="m-4">
+        <h1 class="text-center bg-light mt-4 p-4 rounded">
+          There are {{countf}} Friday 13 in {{year}} year
+        </h1>
+        <a class="btn btn-success" href="{% url 'friday' %}">New search</a>
+      </div>
+    </div>
+  </body>
 </html>

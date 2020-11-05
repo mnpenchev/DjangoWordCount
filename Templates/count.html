@@ -1,25 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Count</title>
-</head>
-<body>
-    <a href = "{% url 'wordcount' %}">New Count</a>
-    <h1>There are {{count}} words in your text</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python - Mini projects</title>
+    <meta
+      name="description"
+      content="These are some small projects on react
+            developed by Martin Penchev."
+    />
+    <!--Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
 
-    <h1>Your text:</h1>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    {{ fulltext }}
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<h1>Word Count:</h1>
-    {% for word, counttotal in sortedwords %}
-<br/>
-    {{ word }} - {{ counttotal }}
-<br/>
-
-    {% endfor %}
-
-<a href="{% url 'home' %}">Home</a>
-</body>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="m-0 p-0">
+      <!--Dropdown navigation-->
+      <div class="col-12 m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">PythonFun</a>
+          <button
+            class="navbar-toggler"
+            data-target="#my-nav"
+            data-toggle="collapse"
+            aria-controls="my-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}"
+                  >Home<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'about' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="{% url 'contacts' %}"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="m-4 row">
+        <div class="col-md-6 col-12">
+            <h4 class="text-warning">There are <span class="badge badge-info">{{count}}</span> words in your text!</h4>
+    
+            <div style="height: 100%;" class="bg-light p-4 rounded">
+                <h5>Your text:</h1>
+                <p style="height: 100%;">"{{ fulltext }}"</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <h4 class="text-info">Word Count:</h1>
+            <p class="bg-light rounded p-4">
+                {% for word, counttotal in sortedwords %}
+                <br />
+                {{ word }} - {{ counttotal }}
+                <br />
+        
+                {% endfor %}
+            </p>
+            <a class="btn btn-success" href="{% url 'wordcount' %}">New Count</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
