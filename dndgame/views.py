@@ -33,3 +33,6 @@ def choose_hero(request):
         return render(request, 'game_on.html', {'hero': rogue})
 
 
+def game_on(request):
+    pass
+
