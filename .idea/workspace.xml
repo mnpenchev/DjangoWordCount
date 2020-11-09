@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0067bb40-e31e-4f2c-886e-cb72d14cedda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dndgame/templates/dnd_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/templates/dnd_game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dndgame/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dndgame/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,19 +90,27 @@
       <option name="project" value="LOCAL" />
       <updated>1604572818857</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="base logic dnd">
+      <created>1604928066962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604928066962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified friday and views" />
     <MESSAGE value="polishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="polishing" />
+    <MESSAGE value="base logic dnd" />
+    <option name="LAST_COMMIT_MESSAGE" value="base logic dnd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="710" y="87" key="CommitChangelistDialog2" timestamp="1604572817813">
+    <state x="710" y="87" key="CommitChangelistDialog2" timestamp="1604928065736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="710" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604572817813" />
+    <state x="710" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604928065736" />
     <state width="598" height="904" key="GridCell.Tab.0.bottom" timestamp="1604919235028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -121,14 +127,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="598" height="904" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604919235028" />
-    <state x="675" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604572824492">
+    <state x="675" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604928073020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="675" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604572824492" />
-    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604928041411">
+    <state x="675" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604928073020" />
+    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604930026436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604928041411" />
+    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604930026436" />
     <state x="746" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604435944718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

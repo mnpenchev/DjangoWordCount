@@ -17,15 +17,19 @@ def dndgame(request):
 def choose_hero(request):
     hero = int(request.GET['bb'])
     if hero == 1:
-        return render(request, 'dnd_game.html', {'hero': fighter})
+        player_class = fighter
+        return render(request, 'game_on.html', {'hero': fighter})
 
     if hero == 2:
-        return render(request, 'dnd_game.html', {'hero': mage})
+        player_class = mage
+        return render(request, 'game_on.html', {'hero': mage})
 
     if hero == 3:
-        return render(request, 'dnd_game.html', {'hero': cleric})
+        player_class = cleric
+        return render(request, 'game_on.html', {'hero': cleric})
 
     if hero == 4:
-        return render(request, 'dnd_game.html', {'hero': rogue})
+        player_class = rogue
+        return render(request, 'game_on.html', {'hero': rogue})
 
-    #return render(request, 'dnd_game.html', {'hero': fighter})
+
