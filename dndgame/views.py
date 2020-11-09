@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-fighter = {'name': 'Korgan', 'attack_num': 3, 'attack_dice': 20, 'max_health': 250, 'health': 250, 'AC': 15, 'init': 16,
+fighter = {'name': 'Korgan', 'attack_num': 3, 'attack_dice': 20, 'max_health': 250, 'health': 10, 'AC': 15, 'init': 16,
            'experience': 0, 'gold': 0, 'level': 1}
 mage = {'name': 'Edwin', 'attack_num': 2, 'attack_dice': 15, 'max_health': 200, 'health': 200, 'AC': 12, 'init': 10,
         'experience': 0, 'gold': 0, 'level': 1}
