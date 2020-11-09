@@ -18,12 +18,13 @@
   </head>
   <body>
     <!--The game-->
-    <h1>Name: {{name}}</h1>
-    <form class="form-group" action="{% url 'dnd_game' %}">
-      <textarea class="form-control" cols="10" rows="1" name="year"></textarea>
+    <h1>Choose action 1 to 4 </h1>
+    <form class="form-group" action="{% url 'choose_hero' %}">
+      <textarea class="form-control" cols="10" rows="1" name="bb"></textarea>
       <br />
       <input class="btn btn-success" type="submit" value="Find!" />
     </form>
+    <h1>the hero is {{ hero.name }}</h1>
     <!--End of the game-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>

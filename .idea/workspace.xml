@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0067bb40-e31e-4f2c-886e-cb72d14cedda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DjangoWordCount/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoWordCount/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoWordCount/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoWordCount/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dndgame/templates/dnd_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/templates/dnd_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dndgame/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dndgame/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dndgame/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,34 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Radostina\PycharmProjects\DjangoWordCount\Templates" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DjangoWordCount" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dndgame" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dndgame/game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.game" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,14 +105,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="710" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604572817813" />
+    <state width="598" height="904" key="GridCell.Tab.0.bottom" timestamp="1604919235028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="598" height="904" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604919235028" />
+    <state width="598" height="904" key="GridCell.Tab.0.center" timestamp="1604919235028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="598" height="904" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604919235028" />
+    <state width="598" height="904" key="GridCell.Tab.0.left" timestamp="1604919235028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="598" height="904" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604919235028" />
+    <state width="598" height="904" key="GridCell.Tab.0.right" timestamp="1604919235028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="598" height="904" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604919235028" />
     <state x="675" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604572824492">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="675" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604572824492" />
-    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604566871600">
+    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604928041411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604566871600" />
+    <state x="984" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604928041411" />
     <state x="746" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604435944718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
