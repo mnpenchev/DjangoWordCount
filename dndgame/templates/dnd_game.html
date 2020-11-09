@@ -18,13 +18,31 @@
   </head>
   <body>
     <!--The game-->
-    <h1>Choose action 1 to 4 </h1>
-    <form class="form-group" action="{% url 'choose_hero' %}">
-      <textarea class="form-control" cols="10" rows="1" name="bb"></textarea>
-      <br />
-      <input class="btn btn-success" type="submit" value="Find!" />
-    </form>
-    <h1>the hero is {{ hero.name }}</h1>
+    <h1 class="text-center">Welcome to Dungons and dragons</h1>
+    <div class="col-lg-4 col-md-6 com-sm-10 col-12 mx-auto">
+      <div
+        class="btn-group d-flex justify-content-center"
+        role="group"
+        aria-label="Button group"
+      >
+        <form action="{% url 'choose_hero' %}">
+          <input hidden name="bb" type="number" value="1" />
+          <input class="btn btn-info m-1" type="submit" value="Fighter" />
+        </form>
+        <form action="{% url 'choose_hero' %}">
+          <input hidden name="bb" type="number" value="2" />
+          <input class="btn btn-info m-1" type="submit" value="Mage" />
+        </form>
+        <form action="{% url 'choose_hero' %}">
+          <input hidden name="bb" type="number" value="3" />
+          <input class="btn btn-info m-1" type="submit" value="Cleric" />
+        </form>
+        <form action="{% url 'choose_hero' %}">
+          <input hidden name="bb" type="number" value="4" />
+          <input class="btn btn-info m-1" type="submit" value="Rogue" />
+        </form>
+      </div>
+    </div>
     <!--End of the game-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>

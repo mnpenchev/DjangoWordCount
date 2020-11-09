@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    />
+    <title>Dungons&Dragons| Game on</title>
+    <style>
+      #heroBlood {
+        height: 5px;
+        border: 1px solid black;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+      #heroBloodScale {
+        height: 5px;
+        width: 100%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Game on-->
+    <div class="col-lg-4 col-md-6 col-sm-10 col-12 mt-4 p-4 bg-dark mx-auto">
+      <h1>Game started</h1>
+      <p>
+        You're playing with {{ hero.name }} <br />
+        Health
+      </p>
+      <div class="" id="heroBlood">
+        <div
+          style="width: {{hero.health}}% "
+          class=""
+          id="heroBloodScale"
+        ></div>
+      </div>
+      <h6>{{ hero }}</h6>
+    </div>
+    <!--end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+  </body>
 </html>
